@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head.ejs') %>
+<body>
+    <h1>Enter your details</h1>
+    <div class="formbold-main-wrapper">
+        <!-- Author: FormBold Team -->
+        <!-- Learn More: https://formbold.com -->
+        <div class="formbold-form-wrapper">
+          <form action="/generate" method="POST">
+            <div class="formbold-mb-5">
+              <label for="name" class="formbold-form-label"> Full Name </label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Full Name"
+                class="formbold-form-input"
+              />
+            </div>
+            <div class="formbold-mb-5">
+              <label for="phone" class="formbold-form-label"> Phone Number </label>
+              <input
+                type="text"
+                name="phone"
+                id="phone"
+                placeholder="Enter your phone number"
+                class="formbold-form-input"
+              />
+            </div>
+
+            <div class="flex flex-wrap formbold--mx-3">
+              <div class="w-full sm:w-half formbold-px-3">
+                <div class="formbold-mb-5 w-full">
+                  <label for="age" class="formbold-form-label"> Age </label>
+                  <input
+                    type="number"
+                    name="age"
+                    id="age"
+                    min="1"
+                    max="100"
+                    placeholder="Enter your age"
+                    class="formbold-form-input"
+                  />
+                </div>
+              </div>
+              <div class="w-full sm:w-half formbold-px-3">
+                <div class="formbold-mb-5">
+                  <label for="blood" class="formbold-form-label"> Blood Group </label>
+                  <input
+                    type="text"
+                    name="blood"
+                    id="blood"
+                    placeholder="Enter your blood group"
+                    class="formbold-form-input"
+                  />
+                </div>
+              </div>
+            </div>
+      
+            <div class="formbold-mb-5 formbold-pt-3">
+              <label class="formbold-form-label formbold-form-label-2">
+                Address Details
+              </label>
+              <div class="flex flex-wrap formbold--mx-3">
+                <div class="w-full sm:w-half formbold-px-3">
+                  <div class="formbold-mb-5">
+                    <input
+                      type="text"
+                      name="area"
+                      id="area"
+                      placeholder="Enter area"
+                      class="formbold-form-input"
+                    />
+                  </div>
+                </div>
+                <div class="w-full sm:w-half formbold-px-3">
+                  <div class="formbold-mb-5">
+                    <input
+                      type="text"
+                      name="city"
+                      id="city"
+                      placeholder="Enter city"
+                      class="formbold-form-input"
+                    />
+                  </div>
+                </div>
+                <div class="w-full sm:w-half formbold-px-3">
+                  <div class="formbold-mb-5">
+                    <input
+                      type="text"
+                      name="state"
+                      id="state"
+                      placeholder="Enter state"
+                      class="formbold-form-input"
+                    />
+                  </div>
+                </div>
+                <div class="w-full sm:w-half formbold-px-3">
+                  <div class="formbold-mb-5">
+                    <input
+                      type="text"
+                      name="postcode"
+                      id="postcode"
+                      placeholder="Post Code"
+                      class="formbold-form-input"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div>
+              <button class="formbold-btn">Generate QR</button>
+            </div>
+          </form>
+        </div>
+      </div>
+</body>
+</html>
